@@ -1,2 +1,3 @@
 # cursedSnek
-Classic snake game remade in python using curses
+using WASD or arrow keys to move.
+...if you have different keyboard layout, then uh, goodluck.
