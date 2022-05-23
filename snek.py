@@ -44,7 +44,11 @@ def main(stdscr) :
     stdscr.addstr(0, std_x // 2 - 2, "Snek", curses.A_REVERSE)
     
     snek_pos = [randint(1, std_y - 2), randint(1, std_x // 2 - 2) * 2]
-    apple_pos = [15, std_x // 2]
+    
+    if snek_pos[0] + 6 > std_y :
+        apple_pos = [snek_pos[0] - 5, snek_pos[1]]
+    else :
+        apple_pos = [snek_pos[0] + 5, snek_pos[1]]
     
     snek_speed = 1
     delay = 0.15
